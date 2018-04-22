@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  age: 1
+  birthdate: 2018-04-22
+  salary: 1.5
+  motto: MyText
+
+two:
+  fullname: MyString
+  age: 1
+  birthdate: 2018-04-22
+  salary: 1.5
+  motto: MyText
