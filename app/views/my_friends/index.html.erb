@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>My Friends</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fullname</th>
+      <th>Age</th>
+      <th>Birthdate</th>
+      <th>Salary</th>
+      <th>Motto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_friends.each do |my_friend| %>
+      <tr>
+        <td><%= my_friend.fullname %></td>
+        <td><%= my_friend.age %></td>
+        <td><%= my_friend.birthdate %></td>
+        <td><%= my_friend.salary %></td>
+        <td><%= my_friend.motto %></td>
+        <td><%= link_to 'Show', my_friend %></td>
+        <td><%= link_to 'Edit', edit_my_friend_path(my_friend) %></td>
+        <td><%= link_to 'Destroy', my_friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My Friend', new_my_friend_path %>
